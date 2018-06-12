@@ -6,6 +6,9 @@ const MapWrapper = function(element, coords, zoom){
 
   }.bind(this))
 
+  const myMarker = new L.marker([55.86515, -4.25763], {title: 'CodeClan Glasgow'}).bindPopup("CodeClan Glasgow, coding bootcamp in Scotland").openPopup(); 
+  myMarker.addTo(this.map);
+
   const chicago = [41.8781, -87.6298, 15];
   const button = document.querySelector('button');
   button.addEventListener('click', function(){
